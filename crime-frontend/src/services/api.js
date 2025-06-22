@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:5000/api"; // your backend URL
+const BASE_URL = import.meta.env.VITE_API_BASE || "http://localhost:5000/api";
+ // your backend URL
 
 export const loginUser = async (data) => {
   try {
